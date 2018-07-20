@@ -1,13 +1,16 @@
 {
   "messages" : {
     "-K2ib4H77rj0LYewF7dP" : {
-      "text" : "Hello"
+      "Text" : "Melding 1",
+      "User" : "Klaas"
     },
     "-K2ib5JHRbbL0NrztUfO" : {
-      "text" : "How are you"
+      "Text" : "Melding 2",
+      "User" : "Jan"
     },
     "-K2ib62mjHh34CAUbide" : {
-      "text" : "I am fine"
+      "Text" : "Melding 3",
+      "User" : "Dirk"
     }
   }
 }
