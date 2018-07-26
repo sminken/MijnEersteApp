@@ -62,4 +62,8 @@ public class MeldingViewModel extends ViewModel {
 
         });
     }
+
+    public void voegMeldingToe(Melding melding) {
+        meldingRepository.voegMeldingToe(melding);
+    }
 }

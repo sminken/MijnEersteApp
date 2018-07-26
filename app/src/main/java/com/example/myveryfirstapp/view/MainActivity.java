@@ -24,6 +24,12 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     public static final String INFO_MELDING = "com.example.myfirstapp.MESSAGE";
 
+
+    // tbv MeldingView
+    private MeldingViewModel viewModel = null;
+
+
+
     // tbv Firedatabase
 //    private DatabaseReference valueRef;
 //    private ValueEventListener valueListener;
@@ -37,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // Create a ViewModel the first time the system calls an activity's onCreate() method.
         // Re-created activities receive the same MyViewModel instance created by the first activity.
         Log.v(TAG, "Create viewModel");
-        MeldingViewModel viewModel = ViewModelProviders.of(this).get(MeldingViewModel.class);
+        viewModel = ViewModelProviders.of(this).get(MeldingViewModel.class);
 
         // attach an observer to the viewmodel methodview
         Log.v(TAG, "Register Observer for viewModel method");
@@ -60,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void maakMelding (View view){
+
+        /*
+        R.id.editText refers to the id of the textbox, defined in activity_main.xml
+         */
+        EditText editText = (EditText) findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        Melding nieuweMelding = new Melding ("26-07-2018", "Ron van den Enden", message, "15:08:00");
+        viewModel.voegMeldingToe(nieuweMelding);
+
 
     }
 

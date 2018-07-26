@@ -38,6 +38,6 @@ public class MeldingEntity {
     }
 
     public void setTijd(String tijdstip) {
-        this.tijd = tijd;
+        this.tijd = tijdstip;
     }
 }
