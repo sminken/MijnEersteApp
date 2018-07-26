@@ -1,16 +1,22 @@
 {
-  "messages" : {
+  "meldingen" : {
     "-K2ib4H77rj0LYewF7dP" : {
-      "Text" : "Melding 1",
-      "User" : "Klaas"
+      "tekst" : "Melding 1",
+      "datum" : "01-01-2010",
+      "tijd" : "12:30:00",
+      "gebruiker" : "Klaas"
     },
     "-K2ib5JHRbbL0NrztUfO" : {
-      "Text" : "Melding 2",
-      "User" : "Jan"
+      "tekst" : "Melding 2",
+      "datum" : "01-01-2017",
+      "tijd" : "12:00:00",
+      "gebruiker" : "Jan"
     },
     "-K2ib62mjHh34CAUbide" : {
-      "Text" : "Melding 3",
-      "User" : "Dirk"
+      "tekst" : "Melding 3",
+      "datum" : "01-01-2016",
+      "tijd" : "11:30:00",
+      "gebruiker" : "Dirk"
     }
   }
 }
