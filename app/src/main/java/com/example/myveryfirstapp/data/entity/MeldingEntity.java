@@ -1,20 +1,19 @@
 package com.example.myveryfirstapp.data.entity;
 
 public class MeldingEntity {
-    private String datum = null;
+    private String datumTijd  = null;
     private String gebruiker = null;
     private String tekst = null;
-    private String tijd = null;
 
     public MeldingEntity() {
     }
 
-    public String getDatum() {
-        return datum;
+    public String getDatumTijd() {
+        return datumTijd;
     }
 
-    public void setDatum(String datum) {
-        this.datum = datum;
+    public void setDatumTijd(String datumTijd) {
+        this.datumTijd = datumTijd;
     }
 
     public String getGebruiker() {
@@ -31,13 +30,5 @@ public class MeldingEntity {
 
     public void setTekst(String tekst) {
         this.tekst = tekst;
-    }
-
-    public String getTijd() {
-        return tijd;
-    }
-
-    public void setTijd(String tijdstip) {
-        this.tijd = tijdstip;
     }
 }

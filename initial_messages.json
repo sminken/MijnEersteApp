@@ -2,20 +2,22 @@
   "meldingen" : {
     "-K2ib4H77rj0LYewF7dP" : {
       "tekst" : "Melding 1",
-      "datum" : "01-01-2010",
-      "tijd" : "12:30:00",
+      "datumTijd" : "20180701120001",
       "gebruiker" : "Klaas"
     },
     "-K2ib5JHRbbL0NrztUfO" : {
       "tekst" : "Melding 2",
-      "datum" : "01-01-2017",
-      "tijd" : "12:00:00",
+      "datumTijd" : "20180401235041",
       "gebruiker" : "Jan"
     },
     "-K2ib62mjHh34CAUbide" : {
       "tekst" : "Melding 3",
-      "datum" : "01-01-2016",
-      "tijd" : "11:30:00",
+      "datumTijd" : "20180623083044",
+      "gebruiker" : "Dirk"
+    },
+    "-K2ib62mjHh64CjUbide" : {
+      "tekst" : "Melding 4",
+      "datumTijd" : "20180523083044",
       "gebruiker" : "Dirk"
     }
   }

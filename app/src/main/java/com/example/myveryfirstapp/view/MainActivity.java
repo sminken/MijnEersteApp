@@ -17,6 +17,8 @@ import com.example.myveryfirstapp.viewmodel.MeldingViewModel;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,7 +74,12 @@ public class MainActivity extends AppCompatActivity {
          */
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
-        Melding nieuweMelding = new Melding ("26-07-2018", "Ron van den Enden", message, "15:08:00");
+
+        Date toDay = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        String myDateString = sdf.format(toDay);
+
+        Melding nieuweMelding = new Melding (myDateString, "Ron van den Enden", message);
         viewModel.voegMeldingToe(nieuweMelding);
 
 

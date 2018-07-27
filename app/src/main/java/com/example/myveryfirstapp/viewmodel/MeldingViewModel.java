@@ -13,6 +13,8 @@ import com.example.myveryfirstapp.data.repository.FirebaseDatabaseRepository;
 import com.example.myveryfirstapp.data.repository.MeldingRepository;
 import com.example.myveryfirstapp.domain.Melding;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MeldingViewModel extends ViewModel {
@@ -50,6 +52,15 @@ public class MeldingViewModel extends ViewModel {
         meldingRepository.addListener(new FirebaseDatabaseRepository.FirebaseDatabaseRepositoryCallback<Melding>() {
             @Override
             public void onSuccess(List<Melding> result) {
+                /*
+                Meldingen sorteren: jongste voorop
+                 */
+                Collections.sort(result, new Comparator<Melding>() {
+                    @Override
+                    public int compare(Melding m1, Melding m2) {
+                        return 0-m1.getDatumTijd().compareTo(m2.getDatumTijd());
+                    }
+                });
                 liveDataMeldingen.setValue(result);
             }
 
