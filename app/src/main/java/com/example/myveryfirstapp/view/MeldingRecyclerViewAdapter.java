@@ -1,6 +1,7 @@
 package com.example.myveryfirstapp.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
@@ -50,6 +51,9 @@ public class MeldingRecyclerViewAdapter extends RecyclerView.Adapter<MeldingRecy
             public void onClick(View v) {
                 Log.d(TAG, "onClick: clicked on" + mlijstMeldingen.get(position));
 
+
+
+
                 Toast.makeText(mContext, mlijstMeldingen.get(position).getTekst(), Toast.LENGTH_LONG).show();
             }
         });
@@ -59,6 +63,7 @@ public class MeldingRecyclerViewAdapter extends RecyclerView.Adapter<MeldingRecy
     public int getItemCount() {
         return mlijstMeldingen.size();
     }
+
 
     public class MeldingDetailViewHolder extends RecyclerView.ViewHolder {
 
