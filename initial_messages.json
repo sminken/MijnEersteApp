@@ -19,6 +19,15 @@
       "tekst" : "Melding 4",
       "datumTijd" : "20180523083044",
       "gebruiker" : "Dirk"
+    },
+    "users" : {
+      "-KKmMM2mjHh64CjUbide": {
+        "naam" : "TestGebruiker",
+        "uid" : ""
+      }
     }
   }
+
+
+
 }
